@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f4f6fc;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  margin-top: 0.5rem;
+}
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #003366;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card i {
+  font-size: 2rem;
+  color: #ff9900;
+  margin-bottom: 0.5rem;
+}
+.formulario, .depoimentos {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 4rem;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formulario input, .formulario textarea, .formulario select {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.formulario button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #003366;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.formulario button:hover {
+  background-color: #0055aa;
+}
+.depoimento {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.depoimento img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.estrelas {
+  color: #f5b50a;
+}
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+footer p, footer a {
+  color: #fff;
+  margin: 0.3rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* HEADER TOPO */
+.topo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.redes-contato {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.redes-contato a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.redes-contato a:hover {
+  opacity: 0.7;
+}
+
+.btn-fale {
+  padding: 0.5rem 1rem;
+  background-color: #ff9900;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}

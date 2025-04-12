@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reis Travel - Roteiros Personalizados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+        <div class="topo-header container">
+      <div class="logo">Reis Travel</div>
+      <div class="redes-contato">
+        <a href="https://www.instagram.com/goreistravel/#" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=5575999831566" target="_blank" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.youtube.com/@ReisTravel" target="_blank" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="mailto:SEUEMAIL@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        <a href="#formulario" class="btn-fale">Fale Conosco</a>
+      </div>
+    </div>
+      </div>
+    <nav>
+      <a href="#como-funciona">Como Funciona</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#formulario">Roteiro Personalizado</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="como-funciona">
+      <h2 class="section-title">Como Funciona</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-file-alt"></i>
+          <h3>1. Briefing</h3>
+          <p>Você preenche um formulário detalhado sobre seu estilo, orçamento, preferências e destino.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-plane-departure"></i>
+          <h3>Aéreo</h3>
+          <p>Pesquisamos os melhores voos, horários e fazemos seu check-in de forma prática.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shuttle-van"></i>
+          <h3>Transfer</h3>
+          <p>Selecionamos opções de transporte confiáveis e com ótimo custo-benefício para te levar com segurança.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-hotel"></i>
+          <h3>Hotel</h3>
+          <p>Selecionamos hotéis com melhor localização, conforto e nota de avaliação.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-file-pdf"></i>
+          <h3>3. Entrega</h3>
+          <p>Você recebe um roteiro digital completo em PDF com todos os detalhes organizados dia a dia.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-headset"></i>
+          <h3>4. Suporte</h3>
+          <p>Oferecemos suporte via WhatsApp durante sua viagem para emergências ou dúvidas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos" id="depoimentos">
+      <h2 class="section-title">Depoimentos</h2>
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Juliana">
+        <div>
+          <p>“A Reis Travel organizou tudo perfeitamente. Foi a melhor viagem da minha vida!”</p>
+          <div class="estrelas">★★★★★</div>
+          <cite>– Juliana S. -SP</cite>
+          
+        </div>
+      </div>
+      <div class="depoimento">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcos">
+        <div>
+          <p>“Excelente atendimento e suporte em todos os momentos. Recomendo muito!”</p>
+          <div class="estrelas">★★★★★</div>
+          <cite>– Marcos T. - RJ</cite>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="formulario" id="formulario">
+      <h2 class="section-title">Solicite seu Roteiro Personalizado</h2>
+      <form action="https://formsubmit.co/SEUEMAIL@gmail.com" method="POST">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp">
+        <input type="text" name="instagram" placeholder="Instagram">
+        <select name="tipo_viagem">
+          <option disabled selected>Tipo de viagem</option>
+          <option>Romântica</option>
+          <option>Férias em família</option>
+          <option>Negócios</option>
+          <option>Aventura</option>
+        </select>
+        <select name="orcamento">
+          <option disabled selected>Quanto deseja gastar?</option>
+          <option>Até R$ 2.000</option>
+          <option>R$ 2.000 a R$ 5.000</option>
+          <option>Acima de R$ 5.000</option>
+        </select>
+        <textarea name="destinos" rows="3" placeholder="Destinos desejados"></textarea>
+        <textarea name="preferencias" rows="3" placeholder="Preferências, atividades ou hospedagem ideal"></textarea>
+        <button type="submit">Enviar Pedido</button>
+      </form>
+      <p style="margin-top: 1rem; color: green; font-weight: bold;">Obrigado! Entraremos em contato com você em breve pelo WhatsApp ou Instagram.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Entre em contato:</p>
+    <a href="https://api.whatsapp.com/send?phone=5575999831566"><i class="fab fa-whatsapp"></i> WhatsApp</a> |
+    <a href="https://www.instagram.com/goreistravel/#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <p>&copy; 2025 Reis Travel. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
